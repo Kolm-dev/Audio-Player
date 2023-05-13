@@ -93,7 +93,7 @@ const AudioPlayer: React.FC = () => {
 							<button
 								onClick={() => setShowForm(!showForm)}
 								className="btn addMusicButton">
-								Add file
+								Add file 🎵
 							</button>
 						</div>
 						<div className="outputPanel">
@@ -107,14 +107,15 @@ const AudioPlayer: React.FC = () => {
 								onEnded={handleAudioEnded}
 							/>
 							<div className="controls">
-								<button className={`btn`} onClick={handleNextClick}>
-									Next song ⏭️
+								<button className={`btn`} onClick={handlePrevClick}>
+									Prev song ⏮️
 								</button>
+
 								<button className={`btn`} onClick={handlePlayClick}>
 									{isPlaying ? "Pause ⏸️" : "Play ▶️"}
 								</button>
-								<button className={`btn`} onClick={handlePrevClick}>
-									Prev song ⏮️
+								<button className={`btn`} onClick={handleNextClick}>
+									Next song ⏭️
 								</button>
 							</div>
 						</div>
