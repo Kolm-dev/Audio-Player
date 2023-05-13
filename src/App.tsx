@@ -71,7 +71,7 @@ const AudioPlayer: React.FC = () => {
 								type="text"
 								placeholder="Enter the artist or song title you want to listen to..."
 							/> */}
-							<div style={{display: "none"}} className="radioGroup">
+							{/* <div style={{display: "block"}} className="radioGroup">
 								<div className="radioButton">
 									<label htmlFor="singer">Search by:</label>
 									<label htmlFor="title">
@@ -89,8 +89,10 @@ const AudioPlayer: React.FC = () => {
 									</label>
 								</div>
 								<button className="searchButton btn">Let's find 🔍</button>
-							</div>
-							<button onClick={() => setShowForm(!showForm)} className="btn">
+							</div> */}
+							<button
+								onClick={() => setShowForm(!showForm)}
+								className="btn addMusicButton">
 								Add file
 							</button>
 						</div>

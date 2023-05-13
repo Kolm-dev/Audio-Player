@@ -32,8 +32,8 @@ const useStore = create<Store>((set) => ({
 		})),
 	setAudioRef: (ref: AudioRef) => set({audio: ref}),
 	songs: [
-		{title: "Sound 1", url: "/sound.mp3"},
-		{title: "Sound 2", url: "/sound2.mp3"},
+		{title: "Relax music", url: "/sound.mp3"},
+		{title: "A simple tune from the internet", url: "/sound2.mp3"},
 	],
 	isChecked: false,
 	toggleCheckbox: () => set((prevState) => ({isChecked: !prevState.isChecked})),

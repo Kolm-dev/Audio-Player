@@ -58,7 +58,13 @@
 
 	.searchPanel {
 		margin-top: 200px;
-
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		.addMusicButton {
+			color: red;
+			width: 150px;
+		}
 		.playerInputSearch {
 			width: 400px;
 			color: #fff;
